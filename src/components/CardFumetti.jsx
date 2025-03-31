@@ -15,7 +15,7 @@ function CardFumetti() {
   useEffect(() => {
     fetch("http://localhost:3000/fumetti")
       .then((res) => res.json())
-      .then((data) => setfumetti(data))
+      .then((data) => setfumetti(data.slice(0, 5)))
       .catch((err) => console.error("Errore nel fetch:", err));
   }, []);
 
@@ -40,17 +40,21 @@ function CardFumetti() {
               />
             </CardContent>
             <CardFooter className="flex flex-col items-center bg-amber-100">
-              <div>
-                <a
-                  href={fumetti.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 underline block mt-2"
-                >
-                  Visita il sito
-                </a>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <div className="flex items-center">
+                  <p className="bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md text-sm">
+                    Tags:{" "}
+                  </p>
+                </div>
+                {fumetti.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md text-sm"
+                  >
+                    #{tag}
+                  </span>
+                ))}
               </div>
-              <p className="text-gray-600">Tags: {fumetti.tags.join(", ")}</p>
             </CardFooter>
           </Card>
         ))}

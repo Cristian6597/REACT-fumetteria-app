@@ -5,10 +5,10 @@ import Novita from "./Novita";
 function Main() {
   return (
     <>
-      <div className="bg-amber-100 h-full rounded-2xl flex flex-col gap-10">
+      <div className="bg-amber-100 h-full flex flex-col border-4 border-orange-500 border-solid">
         <div>
           <h1 className="text-3xl font-bold text-blue-900 py-4 px-4 top-10">
-            Vicino a te
+            Top 5 vicino a te
           </h1>
         </div>
         <div className="flex flex-row gap-4 items-center h-1/2 ">

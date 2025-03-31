@@ -15,7 +15,7 @@ function CardFumetterie() {
   useEffect(() => {
     fetch("http://localhost:3000/fumetterie")
       .then((res) => res.json())
-      .then((data) => setFumetterie(data))
+      .then((data) => setFumetterie(data.slice(0, 5)))
       .catch((err) => console.error("Errore nel fetch:", err));
   }, []);
 
@@ -39,7 +39,7 @@ function CardFumetterie() {
                 className="rounded-lg"
               />
             </CardContent>
-            <CardFooter className="flex flex-col items-center bg-amber-100">
+            <CardFooter className="flex flex-col items-center bg-amber-100 p-4">
               <div>
                 <a
                   href={fumetteria.link}
@@ -50,9 +50,21 @@ function CardFumetterie() {
                   Visita il sito
                 </a>
               </div>
-              <p className="text-gray-600">
-                Tags: {fumetteria.tags.join(", ")}
-              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <div className="flex items-center">
+                  <p className="bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md text-sm">
+                    Tags:{" "}
+                  </p>
+                </div>
+                {fumetteria.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md text-sm"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
             </CardFooter>
           </Card>
         ))}
