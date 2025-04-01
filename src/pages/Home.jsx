@@ -3,12 +3,16 @@ import { Button } from "../components/ui/button";
 import { ShoppingBagIcon } from "lucide-react";
 import TopNav from "../components/TopNav";
 import Main from "@/components/Main";
+import Footer from "@/components/Footer";
 
 function Home() {
   return (
     <>
-      <TopNav />
+      <div className="">
+        <TopNav />
+      </div>
       <Main />
+      <Footer />
     </>
   );
 }

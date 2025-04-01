@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { ShoppingCart, ShoppingCartIcon } from "lucide-react";
 
 function CardFumetti() {
   const [fumetti, setfumetti] = useState([]);
@@ -23,12 +24,12 @@ function CardFumetti() {
     <div className="w-full h-full overflow-x-auto custom-scrollbar">
       <div className="flex gap-4 px-4 py-2 min-w-max">
         {fumetti.map((fumetti) => (
-          <Card key={fumetti.id} className="w-80 flex-shrink-0">
-            <CardHeader>
+          <Card key={fumetti.id} className="flex-shrink-0 bg-indigo-200 w-80">
+            <CardHeader className="h-1/6">
               <CardTitle className="text-xl font-bold text-blue-900">
                 {fumetti.nome}
               </CardTitle>
-              <CardDescription className="text-l font-bold text-amber-600">
+              <CardDescription className="font-bold text-l text-amber-600">
                 {fumetti.location}
               </CardDescription>
             </CardHeader>
@@ -39,23 +40,29 @@ function CardFumetti() {
                 className="rounded-lg"
               />
             </CardContent>
-            <CardFooter className="flex flex-col items-center bg-amber-100">
+            <CardFooter className="flex flex-col items-center bg-indigo-200">
               <div className="flex flex-wrap gap-2 mt-2">
                 <div className="flex items-center">
-                  <p className="bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md text-sm">
+                  <p className="px-3 py-1 text-sm text-gray-800 bg-white rounded-lg shadow-md">
                     Tags:{" "}
                   </p>
                 </div>
                 {fumetti.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md text-sm"
+                    className="px-3 py-1 text-sm text-gray-800 bg-white rounded-lg shadow-md"
                   >
                     #{tag}
                   </span>
                 ))}
               </div>
             </CardFooter>
+            <div className="flex flex-row items-center justify-end gap-2 px-2 rounded-lg">
+              <div className="flex flex-row items-center gap-2 p-2 bg-blue-900 rounded-lg cursor-pointer text-amber-100">
+                <p>Aggiungi al carrello</p>
+                <ShoppingCartIcon />
+              </div>
+            </div>
           </Card>
         ))}
       </div>

@@ -8,23 +8,37 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { LogOut, ScrollText, ShoppingCartIcon, Wrench } from "lucide-react";
 
 export function UserMenu() {
   return (
-    <DropdownMenu className="cursor-pointer">
+    <DropdownMenu>
       <DropdownMenuTrigger>
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage
+            src="https://github.com/shadcn.png"
+            alt="@shadcn"
+            className="cursor-pointer"
+          />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-blue-900 text-amber-100">
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+        <DropdownMenuLabel>Il Mio Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>Profile</DropdownMenuItem>
-        <DropdownMenuItem>Billing</DropdownMenuItem>
-        <DropdownMenuItem>Team</DropdownMenuItem>
-        <DropdownMenuItem>Subscription</DropdownMenuItem>
+        <DropdownMenuItem>
+          <ScrollText />
+          Ordini
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          {" "}
+          <Wrench />
+          Impostazioni
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <LogOut />
+          Logout
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
