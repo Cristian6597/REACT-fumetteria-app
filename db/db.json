@@ -95,39 +95,75 @@
     {
       "id": 1,
       "nome": "Batman: The Killing Joke",
-      "image": "https://cdnapisec.kaltura.com/p/2172211/thumbnail/entry_id/1_vg6xrtv9/def_height/500/def_width/500/",
+      "image": "https://m.media-amazon.com/images/I/91OjBx3hSNL._AC_UF1000,1000_QL80_.jpg",
       "prezzo": "15.99",
       "tags": ["DC", "Graphic Novel", "Joker"]
     },
     {
       "id": 2,
       "nome": "Spider-Man: Blue",
-      "image": "https://cdnapisec.kaltura.com/p/2172211/thumbnail/entry_id/1_vg6xrtv9/def_height/500/def_width/500/",
+      "image": "https://m.media-amazon.com/images/I/81PHzU0nPpL._UF1000,1000_QL80_.jpg",
       "prezzo": "18.99",
       "tags": ["Marvel", "Spider-Man", "Graphic Novel"]
     },
     {
       "id": 3,
       "nome": "One Piece Volume 1",
-      "image": "https://cdnapisec.kaltura.com/p/2172211/thumbnail/entry_id/1_vg6xrtv9/def_height/500/def_width/500/",
+      "image": "https://m.media-amazon.com/images/I/81hipaenXVL.jpg",
       "prezzo": "7.99",
       "tags": ["Manga", "Shonen", "Avventura"]
     },
     {
       "id": 4,
       "nome": "Attack on Titan Volume 1",
-      "image": "https://cdnapisec.kaltura.com/p/2172211/thumbnail/entry_id/1_vg6xrtv9/def_height/500/def_width/500/",
+      "image": "https://m.media-amazon.com/images/I/91F-m3Zm1xL._UF1000,1000_QL80_.jpg",
       "prezzo": "9.99",
       "tags": ["Manga", "Shonen", "Action"]
     },
     {
       "id": 5,
       "nome": "Death Note Complete Edition",
-      "image": "https://cdnapisec.kaltura.com/p/2172211/thumbnail/entry_id/1_vg6xrtv9/def_height/500/def_width/500/",
+      "image": "https://www.comix21.it/14729-large_default/death-note-complete-edition.jpg",
       "prezzo": "24.99",
       "tags": ["Manga", "Thriller", "Horror"]
+    },
+    {
+      "id": 6,
+      "nome": "Naruto Volume 1",
+      "image": "https://m.media-amazon.com/images/I/71QYLrc-IQL.jpg",
+      "prezzo": "8.99",
+      "tags": ["Manga", "Shonen", "Ninja"]
+    },
+    {
+      "id": 7,
+      "nome": "Dragon Ball Z Volume 1",
+      "image": "https://m.media-amazon.com/images/I/81vWIAeBijL.jpg",
+      "prezzo": "10.99",
+      "tags": ["Manga", "Shonen", "Action"]
+    },
+    {
+      "id": 8,
+      "nome": "My Hero Academia Volume 1",
+      "image": "https://m.media-amazon.com/images/I/71bnB6BwLwL._AC_UF1000,1000_QL80_.jpg",
+      "prezzo": "12.99",
+      "tags": ["Manga", "Shonen", "Superhero"]
+    },
+    {
+      "id": 9,
+      "nome": "Tokyo Ghoul Volume 1",
+      "image": "https://m.media-amazon.com/images/I/71SrizbdxPL._AC_UF1000,1000_QL80_.jpg",
+      "prezzo": "9.49",
+      "tags": ["Manga", "Horror", "Supernatural"]
+    },
+    {
+      "id": 10,
+      "nome": "Fullmetal Alchemist Volume 1",
+      "image": "https://m.media-amazon.com/images/I/819gbwpjLcL.jpg",
+      "prezzo": "11.99",
+      "tags": ["Manga", "Shonen", "Fantasy"]
     }
   ],
+
   "prodotti": [
     {
       "id": 1,

@@ -4,7 +4,7 @@ import Novita from "./Novita";
 
 function MainAboutUs() {
   return (
-    <div className="flex flex-col h-full gap-10 p-4 border-4 border-orange-500 border-solid bg-amber-100">
+    <div className="flex flex-col h-full gap-10 p-4 bg-white border-4 border-orange-500 border-solid">
       <div>
         <h1 className="px-4 py-4 text-3xl font-bold text-orange-500">
           Chi siamo

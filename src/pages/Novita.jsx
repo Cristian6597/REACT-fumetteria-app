@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import TopNav from "@/components/TopNav";
 
-function News() {
+function Novita() {
   return (
     <>
       <div>
@@ -12,4 +12,4 @@ function News() {
   );
 }
 
-export default News;
+export default Novita;
