@@ -14,6 +14,7 @@ import {
 import { Input } from "./ui/input";
 import { ShoppingCartIcon } from "lucide-react";
 import CardCarrello from "./CardCarrello";
+import ButtonShop from "./ui/buttonShop";
 
 export function CarrelloLaterale({ cart, removeFromCart }) {
   return (
@@ -54,9 +55,7 @@ export function CarrelloLaterale({ cart, removeFromCart }) {
         </div>
         <SheetFooter>
           <SheetClose asChild>
-            <Button type="submit" className="w-full bg-orange-500">
-              Acquista
-            </Button>
+            <ButtonShop />
           </SheetClose>
         </SheetFooter>
       </SheetContent>

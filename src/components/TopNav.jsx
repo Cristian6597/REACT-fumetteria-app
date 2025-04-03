@@ -38,9 +38,9 @@ function TopNav({ cart, removeFromCart }) {
             <div className="flex flex-row items-center gap-2 p-2 rounded-lg">
               <nav>
                 <ul className="flex flex-row items-center gap-4">
-                  <li className="flex flex-row gap-2 ">
+                  <li className="flex flex-row gap-2 cursor-pointer ">
                     <Link to="/lista-dei-desideri">Lista dei desideri</Link>
-                    <Heart />
+                    <Heart className="hover:fill-orange-500" />
                   </li>
                   <li>
                     <Link to="/login">Accedi</Link>

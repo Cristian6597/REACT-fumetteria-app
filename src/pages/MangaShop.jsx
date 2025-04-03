@@ -21,7 +21,16 @@ function MangaShop() {
 
   // Funzione per rimuovere un fumetto dal carrello
   const removeFromCart = (id) => {
-    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
+    // Rimuove solo una copia dell'oggetto cliccato (usiamo l'index)
+    setCart((prevCart) => {
+      const index = prevCart.findIndex((item) => item.id === id);
+      if (index !== -1) {
+        const newCart = [...prevCart];
+        newCart.splice(index, 1); // Rimuove solo l'oggetto cliccato
+        return newCart;
+      }
+      return prevCart;
+    });
   };
 
   return (

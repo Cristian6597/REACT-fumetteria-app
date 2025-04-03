@@ -1,204 +1,318 @@
 {
   "fumetterie": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "FumettiMania",
       "location": "Milano, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://fumettimania.it",
-      "tags": ["Manga", "Comics", "Gadget"],
+      "tags": [
+        "Manga",
+        "Comics",
+        "Gadget"
+      ],
       "rating": 2
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Comics World",
       "location": "Roma, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://comicsworld.com",
-      "tags": ["Marvel", "DC", "Fumetti Rari"],
+      "tags": [
+        "Marvel",
+        "DC",
+        "Fumetti Rari"
+      ],
       "rating": 5
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Nerd Haven",
       "location": "Torino, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://nerdhaven.it",
-      "tags": ["Anime", "Manga", "Action Figures"],
+      "tags": [
+        "Anime",
+        "Manga",
+        "Action Figures"
+      ],
       "rating": 4
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "SuperHero Store",
       "location": "Napoli, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://superherostore.com",
-      "tags": ["DC", "Marvel", "Statue"],
+      "tags": [
+        "DC",
+        "Marvel",
+        "Statue"
+      ],
       "rating": 3
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Otaku Planet",
       "location": "Firenze, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://otakuplanet.it",
-      "tags": ["Manga", "Anime", "Gadget"],
+      "tags": [
+        "Manga",
+        "Anime",
+        "Gadget"
+      ],
       "rating": 4
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "Fantasy Comics",
       "location": "Bologna, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://fantasycomics.it",
-      "tags": ["Fumetti Vintage", "Manga", "Giochi da Tavolo"],
+      "tags": [
+        "Fumetti Vintage",
+        "Manga",
+        "Giochi da Tavolo"
+      ],
       "rating": 5
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Geek Empire",
       "location": "Verona, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://geekempire.com",
-      "tags": ["Funko Pop", "Comics", "Action Figures"],
+      "tags": [
+        "Funko Pop",
+        "Comics",
+        "Action Figures"
+      ],
       "rating": 2
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Collector's Paradise",
       "location": "Genova, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://collectorsparadise.it",
-      "tags": ["Fumetti Rari", "Limited Edition", "Poster"],
+      "tags": [
+        "Fumetti Rari",
+        "Limited Edition",
+        "Poster"
+      ],
       "rating": 4
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "Cosplay Universe",
       "location": "Palermo, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://cosplayuniverse.it",
-      "tags": ["Cosplay", "Manga", "Anime"],
+      "tags": [
+        "Cosplay",
+        "Manga",
+        "Anime"
+      ],
       "rating": 3
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "Star Comics Store",
       "location": "Cagliari, Italia",
       "image": "https://www.comix21.it/img/cms/japan%20shop.png",
       "link": "https://starcomicsstore.com",
-      "tags": ["Sci-Fi", "Fantasy", "Marvel"],
+      "tags": [
+        "Sci-Fi",
+        "Fantasy",
+        "Marvel"
+      ],
       "rating": 5
     }
   ],
   "fumetti": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Batman: The Killing Joke",
       "image": "https://m.media-amazon.com/images/I/91OjBx3hSNL._AC_UF1000,1000_QL80_.jpg",
       "prezzo": "15.99",
-      "tags": ["DC", "Graphic Novel", "Joker"]
+      "tags": [
+        "DC",
+        "Graphic Novel",
+        "Joker"
+      ],
+      "preferiti": false
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Spider-Man: Blue",
       "image": "https://m.media-amazon.com/images/I/81PHzU0nPpL._UF1000,1000_QL80_.jpg",
       "prezzo": "18.99",
-      "tags": ["Marvel", "Spider-Man", "Graphic Novel"]
+      "tags": [
+        "Marvel",
+        "Spider-Man",
+        "Graphic Novel"
+      ],
+      "preferiti": false
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "One Piece Volume 1",
       "image": "https://m.media-amazon.com/images/I/81hipaenXVL.jpg",
       "prezzo": "7.99",
-      "tags": ["Manga", "Shonen", "Avventura"]
+      "tags": [
+        "Manga",
+        "Shonen",
+        "Avventura"
+      ],
+      "preferiti": false
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Attack on Titan Volume 1",
       "image": "https://m.media-amazon.com/images/I/91F-m3Zm1xL._UF1000,1000_QL80_.jpg",
       "prezzo": "9.99",
-      "tags": ["Manga", "Shonen", "Action"]
+      "tags": [
+        "Manga",
+        "Shonen",
+        "Action"
+      ],
+      "preferiti": false
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Death Note Complete Edition",
       "image": "https://www.comix21.it/14729-large_default/death-note-complete-edition.jpg",
       "prezzo": "24.99",
-      "tags": ["Manga", "Thriller", "Horror"]
+      "tags": [
+        "Manga",
+        "Thriller",
+        "Horror"
+      ],
+      "preferiti": false
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "Naruto Volume 1",
       "image": "https://m.media-amazon.com/images/I/71QYLrc-IQL.jpg",
       "prezzo": "8.99",
-      "tags": ["Manga", "Shonen", "Ninja"]
+      "tags": [
+        "Manga",
+        "Shonen",
+        "Ninja"
+      ],
+      "preferiti": false
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Dragon Ball Z Volume 1",
       "image": "https://m.media-amazon.com/images/I/81vWIAeBijL.jpg",
       "prezzo": "10.99",
-      "tags": ["Manga", "Shonen", "Action"]
+      "tags": [
+        "Manga",
+        "Shonen",
+        "Action"
+      ],
+      "preferiti": false
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "My Hero Academia Volume 1",
       "image": "https://m.media-amazon.com/images/I/71bnB6BwLwL._AC_UF1000,1000_QL80_.jpg",
       "prezzo": "12.99",
-      "tags": ["Manga", "Shonen", "Superhero"]
+      "tags": [
+        "Manga",
+        "Shonen",
+        "Superhero"
+      ],
+      "preferiti": false
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "Tokyo Ghoul Volume 1",
       "image": "https://m.media-amazon.com/images/I/71SrizbdxPL._AC_UF1000,1000_QL80_.jpg",
       "prezzo": "9.49",
-      "tags": ["Manga", "Horror", "Supernatural"]
+      "tags": [
+        "Manga",
+        "Horror",
+        "Supernatural"
+      ],
+      "preferiti": false
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "Fullmetal Alchemist Volume 1",
       "image": "https://m.media-amazon.com/images/I/819gbwpjLcL.jpg",
       "prezzo": "11.99",
-      "tags": ["Manga", "Shonen", "Fantasy"]
+      "tags": [
+        "Manga",
+        "Shonen",
+        "Fantasy"
+      ],
+      "preferiti": false
     }
   ],
-
   "prodotti": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Funko Pop Iron Man",
       "image": "https://example.com/funko-ironman.jpg",
       "prezzo": "12.99",
-      "tags": ["Marvel", "Funko Pop", "Iron Man"]
+      "tags": [
+        "Marvel",
+        "Funko Pop",
+        "Iron Man"
+      ],
+      "preferiti": false
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Spider-Man: Into the Spider-Verse Statue",
       "image": "https://example.com/spiderman-statue.jpg",
       "prezzo": "49.99",
-      "tags": ["Marvel", "Statue", "Spider-Man"]
+      "tags": [
+        "Marvel",
+        "Statue",
+        "Spider-Man"
+      ],
+      "preferiti": false
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "One Piece Grand Ship Collection",
       "image": "https://example.com/onepiece-ship.jpg",
       "prezzo": "29.99",
-      "tags": ["Manga", "One Piece", "Model Kit"]
+      "tags": [
+        "Manga",
+        "One Piece",
+        "Model Kit"
+      ],
+      "preferiti": false
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Naruto Headband Replica",
       "image": "https://example.com/naruto-headband.jpg",
       "prezzo": "8.99",
-      "tags": ["Anime", "Naruto", "Cosplay"]
+      "tags": [
+        "Anime",
+        "Naruto",
+        "Cosplay"
+      ],
+      "preferiti": false
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Dragon Ball Z Action Figure Goku",
       "image": "https://example.com/dbz-goku.jpg",
       "prezzo": "19.99",
-      "tags": ["Anime", "Dragon Ball Z", "Action Figure"]
+      "tags": [
+        "Anime",
+        "Dragon Ball Z",
+        "Action Figure"
+      ],
+      "preferiti": false
     }
   ]
 }
