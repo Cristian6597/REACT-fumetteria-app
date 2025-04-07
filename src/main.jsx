@@ -9,6 +9,7 @@ import MangaShop from "./pages/MangaShop.jsx";
 import Post from "./pages/Post.jsx";
 import Shop from "./pages/Shop.jsx";
 import Novita from "./pages/Novita.jsx";
+import Login from "./pages/Login.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/cart" element={<Cart />} />
         <Route path="/manga" element={<MangaShop />} />
         <Route path="/posts" element={<Post />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
