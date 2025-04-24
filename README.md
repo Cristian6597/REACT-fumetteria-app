@@ -1,9 +1,27 @@
-# React + Vite
+# 🛍️ Fumetterie Manager – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend React per la gestione di fumetterie e dei loro prodotti, con funzionalità per utenti autenticati come la lista dei desideri, visualizzazione novità, pagina dei post e una UI moderna ispirata a shop online.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# REACT-fumetteria-app
+## 🎯 Funzionalità principali
+
+- 🔐 **Login utente** con gestione sessione
+- 🛒 **Carrello** con UI aggiornata
+- 💖 **Lista desideri** gestita lato client
+- 🆕 **Pagina Novità** per nuovi arrivi
+- 🗞️ **Pagina Post** (blog/notizie)
+- 🗂️ Visualizzazione prodotti in liste e shop
+- 🔄 Routing dinamico tramite **React Router**
+- ⚙️ Componentizzazione estesa per riuso del codice
+
+---
+
+## 🧰 Stack Tecnologico
+
+- ⚛️ **React.js**
+- 🧭 **React Router DOM**
+- 💅 **TailwindCSS*
+- 🔒 JWT token per autenticazione (client-side)
+
+---
