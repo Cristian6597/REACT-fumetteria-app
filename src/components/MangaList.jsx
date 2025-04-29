@@ -14,7 +14,7 @@ function MangaList({ addToCart }) {
   const [fumettiList, setFumettiList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/fumetti")
+    fetch("/fumetti")
       .then((res) => res.json())
       .then((data) => setFumettiList(data))
       .catch((err) => console.error("Errore nel fetch:", err));
@@ -34,7 +34,7 @@ function MangaList({ addToCart }) {
 
     try {
       // Invia la richiesta PATCH per aggiornare il campo `preferiti`
-      const response = await fetch(`http://localhost:3000/fumetti/${id}`, {
+      const response = await fetch(`/fumetti/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -70,8 +70,8 @@ function MangaList({ addToCart }) {
               <div className="flex flex-row">
                 <div className="flex w-4/5">
                   <CardTitle className="text-lg font-bold">
-                    {fumetto.nome}
-                    {fumetto.location}
+                    {fumetto.title}
+                    {fumetto.volume}
                   </CardTitle>
                 </div>
                 <div className="flex items-center justify-end w-1/5 cursor-pointer hover:text-orange-500">

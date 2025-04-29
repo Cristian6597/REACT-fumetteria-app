@@ -1,12 +1,14 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
 import Footer from "@/components/Footer";
 import MangaList from "@/components/MangaList";
 import TopNav from "@/components/TopNav";
-import { useState } from "react";
 
 function MangaShop() {
-  // Stato per il carrello
+  // Stato per il carrello e per il caricamento dei fumetti
   const [cart, setCart] = useState([]);
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [fumetti, setFumetti] = useState([]); // Stato per i fumetti
 
   // Funzione per aggiungere un fumetto al carrello
   const addToCart = (fumetto) => {
@@ -33,10 +35,22 @@ function MangaShop() {
     });
   };
 
+  // Effetto per caricare i fumetti da backend usando Axios
+  useEffect(() => {
+    axios
+      .get("/fumetti") // Modifica l'URL a seconda della tua API
+      .then((response) => {
+        setFumetti(response.data); // Imposta i dati ricevuti come stati
+      })
+      .catch((error) => {
+        console.error("Errore nel caricamento dei fumetti:", error);
+      });
+  }, []); // Questo effetto si esegue una sola volta al caricamento
+
   return (
     <>
       <div>
-        {/* Passa il carrello e la funzione addToCart a TopNav */}
+        {/* Passa il carrello e la funzione removeFromCart a TopNav */}
         <TopNav cart={cart} removeFromCart={removeFromCart} />
       </div>
 
@@ -47,8 +61,8 @@ function MangaShop() {
         </div>
       )}
 
-      {/* Passa la funzione addToCart a MangaList */}
-      <MangaList addToCart={addToCart} />
+      {/* Passa i fumetti e la funzione addToCart a MangaList */}
+      <MangaList fumetti={fumetti} addToCart={addToCart} />
 
       <Footer />
     </>

@@ -8,16 +8,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ShoppingCartIcon } from "lucide-react";
+import { useAxios } from "@/context/AxiosProvider";
 
+/// Custom hook to use axios instance
 function CaroselloFumetti() {
+  const axios = useAxios();
   const [fumetti, setFumetti] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerSlide, setItemsPerSlide] = useState(3);
 
+  // Fetch fumetti data from the API
   useEffect(() => {
-    fetch("http://localhost:3000/fumetti")
-      .then((res) => res.json())
-      .then((data) => setFumetti(data.slice(0, 5)))
+    axios
+      .get("/fumetti")
+      .then((res) => setFumetti(res.data.slice(0, 5)))
       .catch((err) => console.error("Errore nel fetch:", err));
   }, []);
 
@@ -31,11 +35,13 @@ function CaroselloFumetti() {
       }
     };
 
+    // Add event listener for resize
     handleResize(); // Init check
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Auto slide change
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(
@@ -46,6 +52,7 @@ function CaroselloFumetti() {
     return () => clearInterval(interval);
   }, [fumetti, itemsPerSlide]);
 
+  /// Function to go to a specific slide
   const goToSlide = (index) => {
     setCurrentIndex(index);
   };
@@ -69,43 +76,29 @@ function CaroselloFumetti() {
                   groupIndex * itemsPerSlide,
                   groupIndex * itemsPerSlide + itemsPerSlide
                 )
-                .map((fumetto) => (
+                .map((fumetti) => (
                   <Card
-                    key={fumetto.id}
+                    key={fumetti.id}
                     className="flex flex-col justify-between w-full h-full max-w-xs bg-indigo-200 md:max-w-sm"
                   >
                     <CardHeader>
                       <CardTitle className="text-xl font-bold text-blue-900">
-                        {fumetto.nome}
+                        {fumetti.title}
                       </CardTitle>
                       <CardDescription className="font-bold text-l text-amber-600">
-                        {fumetto.location}
+                        {fumetti.volume}
                       </CardDescription>
                     </CardHeader>
 
                     <CardContent className="flex flex-col items-center bg-blue-900">
                       <img
-                        src={fumetto.image}
-                        alt={fumetto.nome}
+                        src={fumetti.image}
+                        alt={fumetti.title}
                         className="object-cover w-full h-auto rounded-lg max-h-64"
                       />
                     </CardContent>
 
                     <CardFooter className="flex flex-col justify-between flex-grow h-full gap-10 p-4 bg-indigo-200">
-                      <div className="flex flex-wrap gap-2">
-                        <p className="px-3 py-1 text-sm text-gray-800 bg-white rounded-lg shadow-md">
-                          Tags:
-                        </p>
-                        {fumetto.tags.map((tag, index) => (
-                          <span
-                            key={index}
-                            className="px-3 py-1 text-sm text-gray-800 bg-white rounded-lg shadow-md"
-                          >
-                            #{tag}
-                          </span>
-                        ))}
-                      </div>
-
                       {/* Pulsante in fondo */}
                       <div className="w-full mt-auto">
                         <div className="flex items-center justify-center w-full gap-2 p-2 bg-blue-900 rounded-lg cursor-pointer text-amber-100">
